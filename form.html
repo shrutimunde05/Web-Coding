@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f2f2f2;
+    }
+    .form-container {
+        width: 100%;
+        max-width: 400px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: #333;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        margin: 10px 0 5px;
+        color: #555;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    .gender-options {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .gender-options label {
+        font-size: 14px;
+    }
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    button[type="submit"] {
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    button[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    </style>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="usa">India</option>
+                <option value="canada">United States</option>
+                <option value="uk">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="uk">South Africa</option>
+                <option value="uk">United Arab Emirates</option>
+            </select>
+            <label for="gender">Gender:</label>
+            <div class="gender-options">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required> I agree to the terms and conditions
+            </label>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
