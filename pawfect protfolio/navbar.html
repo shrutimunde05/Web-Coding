@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 1rem;
+    }
+
+    .navbar-logo {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .navbar-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin: 0 1rem;
+    }
+
+    .navbar-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .navbar-toggle {
+        display: none;
+        cursor: pointer;
+        flex-direction: column;
+    }
+
+    .bar {
+        height: 3px;
+        width: 25px;
+        background-color: #fff;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+        .navbar-links {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 100%;
+            height: calc(100vh - 60px);
+            background-color: #333;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+
+        .navbar-links.active {
+            display: flex;
+        }
+
+        .navbar-toggle {
+            display: flex;
+        }
+
+        .navbar-links li {
+            margin: 1rem 0;
+        }
+    }
+
+    /* Navbar links hover effect */
+    .navbar-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s, transform 0.3s;
+    }
+
+    .navbar-links a:hover {
+        color: #f9a825;
+        /* Change to any accent color you prefer */
+        transform: scale(1.1);
+        /* Slight zoom effect */
+        text-decoration: underline;
+        /* Optional underline */
+    }
+
+    /* Base styling */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 1rem;
+    }
+
+    .navbar-logo {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .navbar-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .navbar-links li {
+        position: relative;
+        margin: 0 1rem;
+    }
+
+    .navbar-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for navbar links */
+    .navbar-links a:hover {
+        color: #f9a825;
+    }
+
+    /* Dropdown menu styling */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        min-width: 150px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content li {
+        width: 100%;
+    }
+
+    .dropdown-content a {
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #444;
+    }
+
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+        .navbar-links {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 100%;
+            height: calc(100vh - 60px);
+            background-color: #333;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+
+        .navbar-links.active {
+            display: flex;
+        }
+
+        .navbar-toggle {
+            display: flex;
+            cursor: pointer;
+            flex-direction: column;
+        }
+
+        .bar {
+            height: 3px;
+            width: 25px;
+            background-color: #fff;
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+
+        .navbar-links li {
+            margin: 1rem 0;
+        }
+
+        .dropdown-content {
+            position: static;
+            display: none;
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">PAWFECT</div>
+        <ul class="navbar-links">
+            <li>
+                <a href="#Home">Home</a>
+            </li>
+            <li class="dropdown">
+                <a href="#about" class="dropbtn">About</a>
+                <ul class="dropdown-content">
+                    <li><a href="#seo">Dog breed app</a></li>
+                    <li><a href="#Branded Produts">Essentials</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#services" class="dropbtn">Services</a>
+                <ul class="dropdown-content">
+                    <li><a href="#webdesign">Dog Breed</a></li>
+                    <li><a href="#seo">Accessories</a></li>
+                    <li><a href="#marketing">Pharmacy</a></li>
+                    <li><a href="#marketing">Premium Food</a></li>
+                    <li><a href="#marketing">Beeding</a></li>
+                    <li><a href="#marketing">Walking essentials</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#contact" class="dropbtn">Contact</a>
+                <ul class="dropdown-content">
+                    <li><a href="#Mobile no.">9309463063</a></li>
+                    <li><a href="#land land no.">022-45678909</a></li>
+                </ul>
+            </li>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+    </nav>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbarLinks = document.querySelector('.navbar-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

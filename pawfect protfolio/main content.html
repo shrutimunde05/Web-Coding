@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Breed Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">PAWFECT</div>
+    <ul class="navbar-links">
+      <li><a href="#Home">Home</a></li>
+      <li class="dropdown">
+        <a href="#about" class="dropbtn">About</a>
+        <ul class="dropdown-content">
+          <li><a href="#seo">Dog breed app</a></li>
+          <li><a href="#Branded Produts">Essentials</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#services" class="dropbtn">Services</a>
+        <ul class="dropdown-content">
+          <li><a href="#webdesign">Dog Breed</a></li>
+          <li><a href="#seo">Accessories</a></li>
+          <li><a href="#marketing">Pharmacy</a></li>
+          <li><a href="#marketing">Premium Food</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#contact" class="dropbtn">Contact</a>
+        <ul class="dropdown-content">
+          <li><a href="#Mobile no.">9309463063</a></li>
+          <li><a href="#land land no.">022-45678909</a></li>
+        </ul>
+      </li>
+      <div class="navbar-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <img src="offer banner.png.webp" width="1400px">
+    <h1 style="color: #014267;">Find Your Perfect Dog Breed</h1>
+    <p style="color: #0b5986;">Explore a variety of breeds to bring home your new best friend.</p>
+  </section>
+
+  <section id="breeds">
+    <h2 style="color: #014267;">Available Breeds</h2>
+    <div class="breed-grid">
+      <div class="breed">
+        <img src="golden rotvier.jpg" alt="Golden Retriever">
+        <h3>Golden Retriever</h3>
+        <p style="color: #0b5986;">Price: ₹5,000</p>
+        <button class="add-to-cart" data-name="Golden Retriever" data-price="800">Add to Cart</button>
+      </div>
+      <div class="breed">
+        <img src="german shepherd.jpg" alt="German Shepherd">
+        <h3>German Shepherd</h3>
+        <p style="color: #0b5986;">Price: ₹8,000</p>
+        <button class="add-to-cart" data-name="German Shepherd" data-price="900">Add to Cart</button>
+      </div>
+      <div class="breed">
+        <img src="french bulldog.jpg" alt="French Bulldog">
+        <h3> French Bulldog</h3>
+        <p style="color: #0b5986;">Price: ₹7,500</p>
+        <button class="add-to-cart" data-name="French Bulldog" data-price="750">Add to Cart</button>
+      </div>
+      <div class="breed">
+        <img src="poodle.jpg" alt="Poodle">
+        <h3>Poodle</h3>
+        <p style="color: #0b5986;">Price: ₹4,800</p>
+        <button class="add-to-cart" data-name="Poodle" data-price="850">Add to Cart</button>
+      </div>
+      <div class="breed">
+        <img src="shih tzu.jpg" alt="Shih Tzu">
+        <h3>Shih Tzu</h3>
+        <p style="color: #0b5986;">Price: ₹10,000</p>
+        <button class="add-to-cart" data-name="Shih Tzu" data-price="500">Add to Cart</button>
+      </div>
+      <div class="breed">
+        <img src="Australian shepherd.jpg" alt="Australian shepherd">
+        <h3>Australian shepherd</h3>
+        <p style="color: #0b5986;">Price: ₹20,000</p>
+        <button class="add-to-cart" data-name="Australian shepherdl" data-price="700">Add to Cart</button>
+      </div>
+      <div class="breed">
+        <img src="husky.jpg" alt="Husky">
+        <h3>Husky</h3>
+        <p style="color: #0b5986;">Price: ₹15,000</p>
+        <button class="add-to-cart" data-name="Husky" data-price="900">Add to Cart</button>
+      </div>
+      <div class="breed">
+        <img src="Yorksire terrier.jpg" alt="Yorksire terrier">
+        <h3>Yorksire terrier</h3>
+        <p style="color: #0b5986;">Price: ₹5,500</p>
+        <button class="add-to-cart" data-name="Yorksire terrier" data-price="950">Add to Cart</button>
+      </div>
+      <div class="breed">
+        <img src="Chihuahua.jpg" alt="Chihuahua">
+        <h3>Chihuahua</h3>
+        <p style="color: #0b5986;">Price: ₹9,000</p>
+        <button class="add-to-cart" data-name="Chihuahua" data-price="850">Add to Cart</button>
+      </div>
+      <div class="breed">
+        <img src="Australian Cattle .jpg" alt="Australian Cattle">
+        <h3>Australian Cattle</h3>
+        <p style="color: #0b5986;">Price: ₹6,000</p>
+        <button class="add-to-cart" data-name="Australian Cattle" data-price="600">Add to Cart</button>
+      </div>
+      <div class="breed">
+        <img src="Dalmatain dog.jpg" alt="Dalmatain dog">
+        <h3>Dalmatain dog</h3>
+        <p style="color: #0b5986;">Price: ₹4,000</p>
+        <button class="add-to-cart" data-name="Dalmatain dog" data-price="400">Add to Cart</button>
+      </div>
+      <div class="breed">
+        <img src="Labradoodle.jpg" alt="Labradoodle">
+        <h3>Labradoodle</h3>
+        <p style="color: #0b5986;">Price: ₹12,000</p>
+        <button class="add-to-cart" data-name="Labradoodle" data-price="900">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="home" class="hero">
+    <h1 style="color: #014267;">Shop for Premium Dog Accessories</h1>
+    <p style="color: #0b5986;">Explore a wide range of accessories for your furry friend.</p>
+    <img src="toy Banner.png.webp" width="1400px">
+  </section>
+
+  <section id="accessories">
+    <h2 style="color: #014267;">Accessories</h2>
+    <div class="accessory-grid">
+      <div class="accessory">
+        <img src="Skatrs Tennis Ball.png.webp" alt="Skatrs Tennis Ball">
+        <h3>Skatrs Tennis Ball For Puppies</h3>
+        <p style="color: #0b5986;">Price: ₹200</p>
+        <button class="add-to-cart" data-name="Skatrs Tennis Ball" data-price="25">Add to Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="Skatrs Hoodie with Pockets.png.webp" alt="Skatrs Hoodie with Pockets">
+        <h3>Skatrs Hoodie with Pockets</h3>
+        <p style="color: #0b5986;">Price: ₹500</p>
+        <button class="add-to-cart" data-name="Skatrs Hoodie with Pockets" data-price="25">Add to Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="Skatrs Hot Pink Puffer Jacket.png.webp" alt="Skatrs Hot Pink Puffer Jacket">
+        <h3>Skatrs Hot Pink Puffer Jacket</h3>
+        <p style="color: #0b5986;">Price: ₹800</p>
+        <button class="add-to-cart" data-name="Skatrs Hot Pink Puffer Jacket" data-price="25">Add to Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="Skatrs Self Clean Slicker Brush.png.webp" alt="Skatrs Self Clean Slicker Brush">
+        <h3>Skatrs Self Clean Slicker Brush</h3>
+        <p style="color: #0b5986;">Price: ₹600</p>
+        <button class="add-to-cart" data-name="Skatrs Self Clean Slicker Brush" data-price="25">Add to Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="GroomingShampoo.png.webp" alt="Grooming Shampoo">
+        <h3> FOUR IN ONE Grooming Shampoo</h3>
+        <p style="color: #0b5986;">Price: ₹300</p>
+        <button class="add-to-cart" data-name="Grooming Shampoo" data-price="25">Add to Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="Square Shaped Bed.png.webp" alt="Square Shaped Bed">
+        <h3>Blue & Orange Square Shaped Bed</h3>
+        <p style="color: #0b5986;">Price: ₹1,500</p>
+        <button class="add-to-cart" data-name="Square Shaped Bed" data-price="25">Add to Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="Noodle Training Toy Ball.png.webp" alt="Noodle Training Toy Ball">
+        <h3>Noodle Training Toy Ball</h3>
+        <p style="color: #0b5986;">Price: ₹400</p>
+        <button class="add-to-cart" data-name="Noodle Training Toy Ball" data-price="25">Add to Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="Trixie Toothpaste with Mint.png.webp" alt="Trixie Toothpaste with Mint">
+        <h3>Trixie Toothpaste with Mint</h3>
+        <p style="color: #0b5986;">Price: ₹150</p>
+        <button class="add-to-cart" data-name="Trixie Toothpaste with Mint" data-price="25">Add to Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="Hemp Butter Paw Cream.png.webp" alt="Hemp Butter Paw Cream">
+        <h3>Hemp Butter Paw Cream</h3>
+        <p style="color: #0b5986;">Price: ₹450</p>
+        <button class="add-to-cart" data-name="Hemp Butter Paw Cream" data-price="25">Add to Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="Natural Neem Anti Tick and Flea Shampoo.png.webp" alt="Natural Neem Anti Tick and Flea Shampoo">
+        <h3>Anti Tick and Flea Shampoo</h3>
+        <p style="color: #0b5986;">Price: ₹350</p>
+        <button class="add-to-cart" data-name="Natural Neem Anti Tick and Flea Shampoo" data-price="30">Add to
+          Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="No Pull Reflective Harness.png.webp" alt="No Pull Reflective Harness">
+        <h3>No Pull Reflective Harness Bed</h3>
+        <p style="color: #0b5986;">Price: ₹900</p>
+        <button class="add-to-cart" data-name="No Pull Reflective Harness" data-price="50">Add to Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="Skatrs Laser Light Toy.png.webp" alt="Skatrs Laser Light Toy">
+        <h3>Skatrs Laser Light Toy For Training</h3>
+        <p style="color: #0b5986;">Price: ₹150</p>
+        <button class="add-to-cart" data-name="Skatrs Laser Light Toy" data-price="15">Add to Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="M Pets Diapers.jpg.webp" alt="M Pets Diapers">
+        <h3>M Pets Diapers For Male</h3>
+        <p style="color: #0b5986;">Price: ₹1,000</p>
+        <button class="add-to-cart" data-name="M Pets Diapers" data-price="15">Add to Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="Kitsters DIY Paw Printing Kit.jpg.webp" alt="Kitsters DIY Paw Printing Kit">
+        <h3>Kitsters DIY Paw Printing Kit</h3>
+        <p style="color: #0b5986;">Price: ₹800</p>
+        <button class="add-to-cart" data-name="Kitsters DIY Paw Printing Kit" data-price="15">Add to Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="Skatrs Anti Skid Stainless Steel Bowl.png.webp" alt="Skatrs Anti Skid Stainless Steel Bowl">
+        <h3>Skatrs Anti Skid Stainless Steel Bowls</h3>
+        <p style="color: #0b5986;">Price: ₹500</p>
+        <button class="add-to-cart" data-name="Skatrs Anti Skid Stainless Steel Bowl" data-price="15">Add to
+          Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="Skatrs Chew Toy.png.webp" alt="Skatrs Chew Toy">
+        <h3>Skatrs Chew Toys Combo Set</h3>
+        <p style="color: #0b5986;">Price: ₹1,200</p>
+        <button class="add-to-cart" data-name="Skatrs Chew Toy" data-price="15">Add to Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="Basil All Purpose Wet Wipes.png.webp" alt="Basil All Purpose Wet Wipes">
+        <h3>Basil All Purpose Wet Wipes</h3>
+        <p style="color: #0b5986;">Price: ₹330</p>
+        <button class="add-to-cart" data-name="Basil All Purpose Wet Wipes" data-price="15">Add to Cart</button>
+      </div>
+      <div class="accessory">
+        <img src="Skatrs Cold Protection Ear Muffs.png.webp" alt="Skatrs Cold Protection Ear Muffs">
+        <h3>Skatrs Cold Protection Ear Muffs</h3>
+        <p style="color: #0b5986;">Price: ₹399</p>
+        <button class="add-to-cart" data-name="Skatrs Cold Protection Ear Muffs" data-price="15">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="home" class="hero">
+    <h1 style="color: #014267;">Explore Premium Dog Pharmacy Products</h1>
+    <p style="color: #0b5986;">Health and wellness products for your beloved pet.</p>
+    <img src="pharmacy banner.1.png.webp" width="1400px">
+  </section>
+
+  <section id="products">
+    <h2 style="color: #014267;">Pharmacy</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="Dog Multivitamins.png.webp" alt="Multivitamins">
+        <h3>Dog Multivitamins</h3>
+        <p style="color: #0b5986;">Price: ₹500</p>
+        <button class="add-to-cart" data-name="Dog Multivitamins" data-price="20">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Joint Supplement.webp" alt="Joint Supplements">
+        <h3>Joint Supplements</h3>
+        <p style="color: #0b5986;">Price: ₹2,150</p>
+        <button class="add-to-cart" data-name="Joint Supplements" data-price="35">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Flea & Tick Treatment.webp" alt="Flea & Tick Treatment">
+        <h3>Flea & Tick Treatment</h3>
+        <p style="color: #0b5986;">Price: ₹1,870</p>
+        <button class="add-to-cart" data-name="Flea & Tick Treatment" data-price="25">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Digestive Care Powder.png.webp" alt="Digestive Care">
+        <h3>Digestive `Powder</h3>
+        <p style="color: #0b5986;">Price: ₹489</p>
+        <button class="add-to-cart" data-name="Digestive Care Powder" data-price="30">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Pawpaya Eye Wipes.png.webp" alt="Pawpaya Eye Wipes">
+        <h3>Pawpaya Eye Wipes</h3>
+        <p style="color: #0b5986;">Price: ₹489</p>
+        <button class="add-to-cart" data-name="Pawpaya Eye Wipes" data-price="30">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Intas Kiskin Lotion.png.webp" alt="Intas Kiskin Lotion">
+        <h3>Intas Kiskin Lotion</h3>
+        <p style="color: #0b5986;">Price: ₹91</p>
+        <button class="add-to-cart" data-name="Intas Kiskin Lotion" data-price="30">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Savavet Strongbeat Tablet for Dogs.png.webp" alt="Savavet Strongbeat Tablet for Dogs">
+        <h3>Savavet Strongbeat Tablet for Dogs</h3>
+        <p style="color: #0b5986;">Price: ₹600</p>
+        <button class="add-to-cart" data-name="Savavet Strongbeat Tablet for Dogs" data-price="30">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Drontal Plus Tasty Dog Deworming Tablet.png.webp" alt="Drontal Plus Tasty Dog Deworming Tablet">
+        <h3>Drontal Plus Tasty Deworming Tablet</h3>
+        <p style="color: #0b5986;">Price: ₹849</p>
+        <button class="add-to-cart" data-name="Drontal Plus Tasty Dog Deworming Tablet" data-price="30">Add to
+          Cart</button>
+      </div>
+      <div class="product">
+        <img src="Vivaldis Rinonadyl Tablet.png.webp" alt="Vivaldis Rinonadyl Tablet">
+        <h3>Vivaldis Rinonadyl Tablet</h3>
+        <p style="color: #0b5986;">Price: ₹323</p>
+        <button class="add-to-cart" data-name="Vivaldis Rinonadyl Tablet" data-price="30">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Vivaldis Pimoben 5:10mg Tablet.png.webp" alt="Vivaldis Pimoben 5/10mg Tablet">
+        <h3>Vivaldis Pimoben 5/10mg Tablet</h3>
+        <p style="color: #0b5986;">Price: ₹755</p>
+        <button class="add-to-cart" data-name="Vivaldis Pimoben 5/10mg Tabletr" data-price="30">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Vivaldis Asbrip Cough Syrup.png.webp" alt="Vivaldis Asbrip Cough Syrup">
+        <h3>Vivaldis Asbrip Cough Syrup</h3>
+        <p style="color: #0b5986;">Price: ₹1,200</p>
+        <button class="add-to-cart" data-name="DVivaldis Asbrip Cough Syrup" data-price="30">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Vivaldis Grapitail Tablets.png.webp" alt="Vivaldis Grapitail Tablets.">
+        <h3>Vivaldis Grapitail Tables.</h3>
+        <p style="color: #0b5986;">Price: ₹1,080</p>
+        <button class="add-to-cart" data-name="Vivaldis Grapitail Tablets." data-price="30">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Vivaldis Atosporin (Cyclosporin) Capsules.png.webp" alt="Vivaldis Atosporin (Cyclosporin) Capsules">
+        <h3>Vivaldis Atosporin Capsules</h3>
+        <p style="color: #0b5986;">Price: ₹250</p>
+        <button class="add-to-cart" data-name="Vivaldis Atosporin (Cyclosporin) Capsules" data-price="30">Add to
+          Cart</button>
+      </div>
+      <div class="product">
+        <img src="Anti Anxiety Supplements.png.webp" alt="Anti Anxiety Supplements">
+        <h3>Anti Anxiety Supplements</h3>
+        <p style="color: #0b5986;">Price: ₹550</p>
+        <button class="add-to-cart" data-name="Anti Anxiety Supplements" data-price="30">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Awd Wound Care Spray.png.webp" alt="Awd Wound Care Spray">
+        <h3>Awd Wound Care Spray</h3>
+        <p style="color: #0b5986;">Price: ₹350</p>
+        <button class="add-to-cart" data-name="Awd Wound Care Spray" data-price="30">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Defender Plus Tablets .png.webp" alt="Defender Plus Tablets ">
+        <h3>Dewormer Defender Plus Tablets </h3>
+        <p style="color: #0b5986;">Price: ₹600</p>
+        <button class="add-to-cart" data-name="Defender Plus Tablets " data-price="30">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Corise Opthocare PD Eye Drops.png.webp" alt="Corise Opthocare PD Eye Drops">
+        <h3>Corise Opthocare PD Eye Drops</h3>
+        <p style="color: #0b5986;">Price: ₹150</p>
+        <button class="add-to-cart" data-name="Corise Opthocare PD Eye DropsCorise Opthocare PD Eye Drops"
+          data-price="30">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Epiotic Ear Cleanser and Easotic Ear Drops .jpg.webp"
+          alt="Epiotic Ear Cleanser and Easotic Ear Drops">
+        <h3>Epiotic Ear Cleanser and Easotic Ear Drops</h3>
+        <p style="color: #0b5986;">Price: ₹1,050</p>
+        <button class="add-to-cart" data-name="Epiotic Ear Cleanser and Easotic Ear Drops" data-price="30">Add to
+          Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="home" class="hero">
+    <h1 style="color: #014267;">Explore Premium Dog Foods</h1>
+    <p style="color: #0b5986;">Nutritious and delicious meals for your beloved pet.</p>
+    <img src="Food Banner.png.webp" width="1400px">
+  </section>
+
+  <section id="foods">
+    <h2 style="color: #014267;">Premium Foods</h2>
+    <div class="food-grid">
+      <div class="food">
+        <img src="Balanced Nutrition for Dogs.jpg.webp" alt="Balanced Nutrition for Dogs">
+        <h3>Balanced Nutrition for Dogs</h3>
+        <p>Price: ₹699</p>
+        <button class="add-to-cart" data-name="Balanced Nutrition for Dogs" data-price="50">Add to Cart</button>
+      </div>
+      <div class="food">
+        <img src="DroolsAbsoluteCalciumSausageDogSupplement-Jar_32Pcs.png.webp" alt="Absolute Calcium Supplement">
+        <h3>Absolute Calcium Supplement</h3>
+        <p>Price: ₹960</p>
+        <button class="add-to-cart" data-name="Absolute Calcium Supplement" data-price="40">Add to Cart</button>
+      </div>
+      <div class="food">
+        <img src="Skin & Coat Supplement.png.webp" alt="Skin & Coat Supplement">
+        <h3>Skin & Coat Supplement</h3>
+        <p>Price: ₹549</p>
+        <button class="add-to-cart" data-name="Skin & Coat Supplement" data-price="60">Add to Cart</button>
+      </div>
+      <div class="food">
+        <img src="Star Coat Omega 3 + 6 Syrup.png.webp" alt="Star Coat Omega 3 + 6 Syrup">
+        <h3>Star Coat Omega 3 + 6 Syrup</h3>
+        <p>Price: ₹425</p>
+        <button class="add-to-cart" data-name="Star Coat Omega 3 + 6 Syrup" data-price="70">Add to Cart</button>
+      </div>
+      <div class="food">
+        <img src="Natgut Digestive Tablets.png.webp" alt="Natgut Digestive Tablets">
+        <h3>Natgut Digestive Powder</h3>
+        <p>Price: ₹300</p>
+        <button class="add-to-cart" data-name="Natgut Digestive Tablets" data-price="70">Add to Cart</button>
+      </div>
+      <div class="food">
+        <img src="Joint Supplement Tablets.jpg" alt="Joint Supplement Tablets">
+        <h3>Orthoron Joint Supplement</h3>
+        <p>Price: ₹550</p>
+        <button class="add-to-cart" data-name="Joint Supplement Tablets" data-price="70">Add to Cart</button>
+      </div>
+      <div class="food">
+        <img src="Skin & Hair Food Supplement.jpg.webp" alt="Skin & Hair Food Supplement">
+        <h3>Skin & Hair Food Supplement</h3>
+        <p>Price: ₹2,025</p>
+        <button class="add-to-cart" data-name="Skin & Hair Food Supplement" data-price="70">Add to Cart</button>
+      </div>
+      <div class="food">
+        <img src="Chicken and Egg Baked Dry Food.png.webp" alt="Chicken and Egg Baked Dry Food">
+        <h3>Chicken & Egg Baked Dry Food</h3>
+        <p>Price: ₹2,350</p>
+        <button class="add-to-cart" data-name="Chicken and Egg Baked Dry Food" data-price="70">Add to Cart</button>
+      </div>
+      <div class="food">
+        <img src="food9.jpg.webp" alt="Chicken and Vegetables Adult Dry Food">
+        <h3>Chicken & Vegetables Adult Dry Food</h3>
+        <p>Price: ₹3,900</p>
+        <button class="add-to-cart" data-name="Chicken and Vegetables Adult Dry Food" data-price="70">Add to
+          Cart</button>
+      </div>
+      <div class="food">
+        <img src="DroolsOptimumPerformanceAdultDogFood_20kg.png.webp" alt="Optimum Performance Adult Dry Food">
+        <h3>Optimum Performance for Adult </h3>
+        <p>Price: ₹3,100</p>
+        <button class="add-to-cart" data-name="Optimum Performance Adult Dry Food" data-price="70">Add to Cart</button>
+      </div>
+      <div class="food">
+        <img src="Vegetarian Puppy and Adult Dry Food.jpg.webp" alt="Vegetarian Puppy and Adult Dry Food">
+        <h3>Vegetarian Puppy and Adult Food</h3>
+        <p>Price: ₹5,600</p>
+        <button class="add-to-cart" data-name="Vegetarian Puppy and Adult Dry Food" data-price="70">Add to Cart</button>
+      </div>
+      <div class="food">
+        <img src="Immunity Multi Vitamin Chew Stix.png.webp" alt="Immunity Multi Vitamin Chew Stix">
+        <h3>Immunity Multi Vitamin Chew Stix</h3>
+        <p>Price: ₹1,250</p>
+        <button class="add-to-cart" data-name="Immunity Multi Vitamin Chew Stix" data-price="70">Add to Cart</button>
+      </div>
+      <div class="food">
+        <img src="Veterinary Diet Urinary S:O Dry Food.png.webp" alt="Veterinary Diet Urinary S/O Dry Food">
+        <h3>Veterinary Diet Urinary S/O Dry Food</h3>
+        <p>Price: ₹2,450</p>
+        <button class="add-to-cart" data-name="Veterinary Diet Urinary S/O Dry Food" data-price="70">Add to
+          Cart</button>
+      </div>
+      <div class="food">
+        <img src="Struvite Canine Dry Food.png.webp" alt="Struvite Canine Dry Food">
+        <h3>Struvite Canine Dry Food</h3>
+        <p>Price: ₹12,600</p>
+        <button class="add-to-cart" data-name="Struvite Canine Dry Food" data-price="70">Add to Cart</button>
+      </div>
+      <div class="food">
+        <img src="Veterinary Diet Hypoallergenic Dry Food.png.webp" alt="Veterinary Diet Hypoallergenic Dry Food">
+        <h3>Veterinary Diet Hypoallergenic Food</h3>
+        <p>Price: ₹4,770</p>
+        <button class="add-to-cart" data-name="Veterinary Diet Hypoallergenic Dry Food" data-price="70">Add to
+          Cart</button>
+      </div>
+      <div class="food">
+        <img src="Joint Canine Formula Dry Food.png.webp" alt="Joint Canine Formula Dry Food">
+        <h3>Joint Canine Formula Dry Food</h3>
+        <p>Price: ₹12,600</p>
+        <button class="add-to-cart" data-name="Joint Canine Formula Dry Food" data-price="70">Add to Cart</button>
+      </div>
+      <div class="food">
+        <img src="Convalescence Canine Wet Food.png.webp" alt="Convalescence Canine Wet Food">
+        <h3>Convalescence Canine Wet Food</h3>
+        <p>Price: ₹2,754</p>
+        <button class="add-to-cart" data-name="Convalescence Canine Wet Food" data-price="70">Add to Cart</button>
+      </div>
+      <div class="food">
+        <img src="UltraHypo Canin Dry Food.png.webp" alt="UltraHypo Canin Dry Food">
+        <h3>UltraHypo Canin Dry Food</h3>
+        <p>Price: ₹12,600</p>
+        <button class="add-to-cart" data-name="UltraHypo Canin Dry Food" data-price="70">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <section id="cart">
+    <h2 style="color: #014267;">Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Dog Breed Store. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js">
+    const cart = [];
+    const cartCount = document.getElementById('cart-count');
+    const cartItems = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', () => {
+        const name = button.getAttribute('data-name');
+        const price = parseFloat(button.getAttribute('data-price'));
+        addToCart(name, price);
+      });
+    });
+
+    function addToCart(name, price) {
+      const existingItem = cart.find(item => item.name === name);
+      if (existingItem) {
+        existingItem.quantity += 1;
+      } else {
+        cart.push({ name, price, quantity: 1 });
+      }
+      updateCart();
+    }
+
+    function updateCart() {
+      cartCount.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);
+      cartItems.innerHTML = cart.map(item => `
+    <div>${item.name} - $${item.price} x ${item.quantity}</div>
+  `).join('');
+      cartTotal.textContent = cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2);
+    }
+  </script>
+</body>
+
+</html>

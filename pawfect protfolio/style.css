@@ -1,0 +1,608 @@
+  /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 1rem;
+    }
+
+    .navbar-logo {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .navbar-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin: 0 1rem;
+    }
+
+    .navbar-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .navbar-toggle {
+        display: none;
+        cursor: pointer;
+        flex-direction: column;
+    }
+
+    .bar {
+        height: 3px;
+        width: 25px;
+        background-color: #fff;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+        .navbar-links {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 100%;
+            height: calc(100vh - 60px);
+            background-color: #333;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+
+        .navbar-links.active {
+            display: flex;
+        }
+
+        .navbar-toggle {
+            display: flex;
+        }
+
+        .navbar-links li {
+            margin: 1rem 0;
+        }
+    }
+
+    /* Navbar links hover effect */
+    .navbar-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s, transform 0.3s;
+    }
+
+    .navbar-links a:hover {
+        color: #f9a825;
+        /* Change to any accent color you prefer */
+        transform: scale(1.1);
+        /* Slight zoom effect */
+        text-decoration: underline;
+        /* Optional underline */
+    }
+
+    /* Base styling */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #4b6777;
+        padding: 1rem;
+    }
+
+    .navbar-logo {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .navbar-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .navbar-links li {
+        position: relative;
+        margin: 0 1rem;
+    }
+
+    .navbar-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for navbar links */
+    .navbar-links a:hover {
+        color: #83b4d0;
+    }
+
+    /* Dropdown menu styling */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        min-width: 150px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content li {
+        width: 100%;
+    }
+
+    .dropdown-content a {
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #444;
+    }
+
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+        .navbar-links {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 100%;
+            height: calc(100vh - 60px);
+            background-color: #333;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+
+        .navbar-links.active {
+            display: flex;
+        }
+
+        .navbar-toggle {
+            display: flex;
+            cursor: pointer;
+            flex-direction: column;
+        }
+
+        .bar {
+            height: 3px;
+            width: 25px;
+            background-color: #fff;
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+
+        .navbar-links li {
+            margin: 1rem 0;
+        }
+
+        .dropdown-content {
+            position: static;
+            display: none;
+            display: block;
+        }
+    }
+/* Hero Section */
+.hero {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Breed Grid */
+.breed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Breed Cards */
+.breed {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.breed:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.breed img {
+  width: 980px;
+  height: 200px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.breed img:hover {
+  transform: scale(1.1);
+}
+
+.breed h3 {
+  margin: 10px 0;
+}
+
+.breed p {
+  color: #555;
+}
+
+/* Button Styles */
+button {
+  background: #3d80a7;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+  transform: translateY(-3px);
+}
+
+/* Cart Section */
+#cart-items div {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+#cart-items div:hover {
+  background: #f9f9f9;
+}
+
+/* Footer Styles */
+footer {
+  background: #4b6777;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+footer:hover {
+  background: #444;
+}
+
+header nav ul li a:hover {
+  color: #ffcc00;
+}
+
+.breed:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.breed img:hover {
+  transform: scale(1.1);
+}
+
+button:hover {
+  background: #00619a;
+  transform: translateY(-3px);
+}
+
+footer:hover {
+  background: #00619a;
+}
+
+#cart-items div:hover {
+  background: #f9f9f9;
+}
+
+/* .breed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} */
+
+img {
+  display: block;
+  margin: 0 auto; /* Centers all images horizontally */
+}
+
+.breed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center; /* Centers each card horizontally */
+  align-items: center; /* Centers each card vertically */
+}
+
+.breed {
+  display: flex;
+  flex-direction: column;
+  color: #044e79;
+  background: rgb(222, 234, 252);
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  text-align: center; /* Centers text */
+}
+
+.breed img {
+  display: block;
+  margin: 0 auto; /* Centers the image */
+  max-width: 100%; /* Ensures the image fits within the card */
+  border-radius: 8px;
+}
+#Accessories{
+  color: #014267;
+}
+/* Section Styles */
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Accessory Grid */
+.accessory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center; /* Centers each card horizontally */
+  align-items: center; /* Centers each card vertically */
+  padding: 20px;
+}
+
+/* Accessory Cards */
+.accessory {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  background: rgb(222, 234, 252);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #044e79;
+}
+
+.accessory:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.accessory img {
+  display: block;
+  margin: 0 auto; /* Centers the image */
+  max-width: 100%; /* Ensures the image fits within the card */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.accessory img:hover {
+  transform: scale(1.1);
+}
+
+.accessory h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.accessory p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Button Styles */
+button {
+  background: #3d80a7;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: #00619a;
+  transform: translateY(-3px);
+}
+
+/* Cart Section */
+#cart-items div {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+#cart-items div:hover {
+  background: #f9f9f9;
+}
+
+/* Footer Styles */
+footer {
+  background: #4b6777;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+footer:hover {
+  background: #00619a;
+}
+
+header nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center; /* Centers each card horizontally */
+  align-items: center; /* Centers each card vertically */
+  padding: 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  background: rgb(222, 234, 252);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #044e79;
+}
+
+.product img {
+  display: block;
+  margin: 0 auto; /* Centers the image */
+  max-width: 100%; /* Ensures the image fits within the card */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product h3 {
+  font-size: 18px;
+  color: #044e79;
+  margin-bottom: 5px;
+}
+
+.product p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Hover Effect */
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product img:hover {
+  transform: scale(1.1);
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center; /* Centers each card horizontally */
+  align-items: center; /* Centers each card vertically */
+  padding: 20px;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  background: rgb(222, 234, 252);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #044e79;
+}
+
+.food img {
+  display: block;
+  margin: 0 auto; /* Centers the image */
+  max-width: 100%; /* Ensures the image fits within the card */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.food h3 {
+  font-size: 18px;
+  color: #044e79;
+  margin-bottom: 5px;
+}
+
+.food p {
+  font-size: 16px;
+  color: #0b5986;
+}
+
+/* Hover Effect */
+.food:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.food img:hover {
+  transform: scale(1.1);
+}
